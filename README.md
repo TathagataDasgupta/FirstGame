@@ -1,2 +1,3 @@
 # FirstGame
-this is my first game
+This is my first game
+I am trying some thing new
