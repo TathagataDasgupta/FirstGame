@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     private float wallJumpCoolDown;
     private float horizontalInput;
+    
 
 
     // awake start when the script is loaded
@@ -61,8 +62,10 @@ public class PlayerMovement : MonoBehaviour
         // so 0!=0 false
         // then setbool (run) = 0 false means yhe character is idle;vice-versa
         anim.SetBool("run", horizontalInput != 0);
+
        
         anim.SetBool("grounded", isGrounded());
+        
 
         // wall jump logic
 
@@ -90,6 +93,8 @@ public class PlayerMovement : MonoBehaviour
                     Junp();
 
                  }
+            
+
         }
         else
             wallJumpCoolDown += Time.deltaTime;
@@ -125,10 +130,11 @@ public class PlayerMovement : MonoBehaviour
     {
         // raycast  is a bool that Returns true if the ray intersects with a Collider, otherwise false.
         // boxcast is also a bool that Casts the box along a ray and returns detailed information on what was hit.
-        
+
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
-    }  private bool onWall()
+    }  
+    private bool onWall()
     {
         // raycast  is a bool that Returns true if the ray intersects with a Collider, otherwise false.
         // boxcast is also a bool that Casts the box along a ray and returns detailed information on what was hit.
