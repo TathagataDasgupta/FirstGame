@@ -15,8 +15,8 @@ TagManager:
   - groundLayer
   - wall
   - tree
-  - 
-  - 
+  - player
+  - enemy
   - 
   - 
   - 
