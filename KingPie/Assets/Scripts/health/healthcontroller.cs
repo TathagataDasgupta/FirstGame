@@ -19,13 +19,14 @@ public class healthcontroller : MonoBehaviour
     {
         spriteRend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        updateHealth();
+        //updateHealth();
     }
-
+    
     public void updateHealth()
     {
         for (int i = 0; i < hearts.Length; i++)
         {
+           
             if (i < currentHealth)
             {
                 hearts[i].color = Color.red;

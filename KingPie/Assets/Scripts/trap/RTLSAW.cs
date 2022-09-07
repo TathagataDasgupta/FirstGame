@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class damagecontroller : MonoBehaviour
+public class RTLSAW : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] private healthcontroller _healthcontroller;
