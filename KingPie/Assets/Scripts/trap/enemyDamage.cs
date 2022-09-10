@@ -7,7 +7,7 @@ public class enemyDamage : MonoBehaviour
     [SerializeField] private int _Damage;
     [SerializeField] private healthcontroller _healthcontroller;
 
-   private void OnTriggerEnter2D(Collider2D collision)
+   public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
