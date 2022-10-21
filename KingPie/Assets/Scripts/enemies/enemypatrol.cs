@@ -46,6 +46,7 @@ public class EnemyPatrol : MonoBehaviour
             else
                 DirectionChange();
         }
+
     }
 
     private void DirectionChange()
@@ -63,7 +64,7 @@ public class EnemyPatrol : MonoBehaviour
         anim.SetBool("moving", true);
 
         //Make enemy face direction
-        enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction,
+        enemy.localScale = new Vector3(initScale.x * _direction,
             initScale.y, initScale.z);
 
         //Move in that direction

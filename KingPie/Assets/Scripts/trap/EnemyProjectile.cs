@@ -4,6 +4,7 @@ public class EnemyProjectile : enemyDamage
 {
     [SerializeField] private float speed;
     [SerializeField] private float resetTime;
+
     private float lifetime;
 
     public void ActivateProjectile()

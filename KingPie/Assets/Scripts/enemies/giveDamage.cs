@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class healthcontroller : MonoBehaviour
+public class giveDamage : MonoBehaviour
 {
+
+
+
     [Header("Health")]
     public int currentHealth;
-    [SerializeField] private Image[] hearts;
+    [SerializeField] private GameObject[] hearts;
     private Animator anim;
 
 
@@ -22,33 +25,37 @@ public class healthcontroller : MonoBehaviour
         anim = GetComponent<Animator>();
         //updateHealth();
     }
-    
+
     public void updateHealth()
     {
         for (int i = 0; i < hearts.Length; i++)
         {
-           
+
             if (i < currentHealth)
             {
-                hearts[i].color = Color.red;
+               
                 anim.SetTrigger("hurt");
                 StartCoroutine(Invunerability());
             }
             else
             {
-                hearts[i].color = Color.black;
+               
                 if (currentHealth == 0)
                 {
                     anim.SetTrigger("die");
-                    GetComponent<PlayerMovement>().enabled = false;
-                   
+                    GetComponent<MeleeEnemy>().enabled = false;
+                    gameObject.SetActive(false);
+                    GetComponent<EnemyPatrol>().enabled = false;
+                    gameObject.SetActive(false);
+                    
+
                 }
-                
+
 
             }
         }
     }
-    
+
     public int AddHealth(int _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, 4);
@@ -67,3 +74,4 @@ public class healthcontroller : MonoBehaviour
         Physics2D.IgnoreLayerCollision(10, 11, false);
     }
 }
+

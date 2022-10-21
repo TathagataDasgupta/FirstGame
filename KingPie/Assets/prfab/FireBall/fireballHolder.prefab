@@ -210,6 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894699596610032
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +380,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894699820538191
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +550,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894700193083605
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894700387206796
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894700604467628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1060,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894700670919606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1230,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894701027010849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,6 +1400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894701179609618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1 &2566894701313445059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +1740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 0
 --- !u!1001 &2156023829103994127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1779,6 +1799,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 002a3359344ff7b4abe615f0dc1d60d2, type: 3}
+--- !u!1 &2566894699700130670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4500447459644864097, guid: 002a3359344ff7b4abe615f0dc1d60d2, type: 3}
+  m_PrefabInstance: {fileID: 2156023829103994127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3299290092192393636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566894699700130670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf49aa41d32ebf84289679ad99d3aed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  _healthcontroller: {fileID: 0}
+  damage: 1
 --- !u!4 &2566894699700130676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4500447459644864123, guid: 002a3359344ff7b4abe615f0dc1d60d2, type: 3}

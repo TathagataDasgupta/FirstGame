@@ -78,8 +78,7 @@ public class MeleeEnemy : MonoBehaviour
 
     void getDamage()
     {
-        playerHealth.currentHealth = playerHealth.currentHealth - damage;
+        playerHealth.currentHealth -= damage;
         playerHealth.updateHealth();
-        // gameObject.SetActive(false);
     }
 }

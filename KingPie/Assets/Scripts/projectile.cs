@@ -10,6 +10,8 @@ public class projectile : MonoBehaviour
     private float direction;
     private BoxCollider2D boxCollider;
     private float lifetime;
+    [SerializeField] private giveDamage _healthcontroller;
+    [SerializeField] private int damage;
 
     private void Awake()
     {
@@ -35,6 +37,12 @@ public class projectile : MonoBehaviour
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
+
+        if (collision.CompareTag("enemy"))
+        {     
+           
+            getDamage();
+        }
     }
     public void setDirection(float _direction)
     {
@@ -56,4 +64,12 @@ public class projectile : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+    void getDamage()
+    {
+        _healthcontroller.currentHealth = _healthcontroller.currentHealth - damage;
+        _healthcontroller.updateHealth();
+        // gameObject.SetActive(false);
+    }
+
+
 }
