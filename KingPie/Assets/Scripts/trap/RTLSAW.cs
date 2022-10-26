@@ -12,6 +12,7 @@ public class RTLSAW : MonoBehaviour
     private float leftEdge;
     private float rightEdge;
 
+
     private void Awake()
     {
         leftEdge = transform.position.x - movementDistance;

@@ -13,6 +13,10 @@ public class giveDamage : MonoBehaviour
     [SerializeField] private GameObject[] hearts;
     private Animator anim;
 
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathsound;
+    [Header("hurt Sound")]
+    [SerializeField] private AudioClip hurtsound;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -36,17 +40,20 @@ public class giveDamage : MonoBehaviour
                
                 anim.SetTrigger("hurt");
                 StartCoroutine(Invunerability());
+                SoundManager.instance.PlaySound(hurtsound);
             }
             else
             {
                
                 if (currentHealth == 0)
                 {
-                    anim.SetTrigger("die");
+                    anim.SetTrigger("die"); 
+                    SoundManager.instance.PlaySound(deathsound);
                     GetComponent<MeleeEnemy>().enabled = false;
                     gameObject.SetActive(false);
                     GetComponent<EnemyPatrol>().enabled = false;
                     gameObject.SetActive(false);
+                   
                     
 
                 }

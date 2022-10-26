@@ -129,6 +129,7 @@ MonoBehaviour:
   activeTime: 2
   damage: 1
   _healthcontroller: {fileID: 0}
+  firesound: {fileID: 8300000, guid: 2155b1e9edbbbcc4db7e1f27ab956c36, type: 3}
 --- !u!95 &8105594135340546315
 Animator:
   serializedVersion: 4

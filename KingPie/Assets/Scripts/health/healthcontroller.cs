@@ -16,6 +16,11 @@ public class healthcontroller : MonoBehaviour
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
 
+    [Header("hurtSound")]
+    [SerializeField] private AudioClip hurt;
+    [Header("deathSound")]
+    [SerializeField] private AudioClip death;
+
     private void Start()
     {
         spriteRend = GetComponent<SpriteRenderer>();
@@ -32,6 +37,7 @@ public class healthcontroller : MonoBehaviour
             {
                 hearts[i].color = Color.red;
                 anim.SetTrigger("hurt");
+                SoundManager.instance.PlaySound(hurt);
                 StartCoroutine(Invunerability());
             }
             else
@@ -40,6 +46,7 @@ public class healthcontroller : MonoBehaviour
                 if (currentHealth == 0)
                 {
                     anim.SetTrigger("die");
+                    SoundManager.instance.PlaySound(death);
                     GetComponent<PlayerMovement>().enabled = false;
                    
                 }

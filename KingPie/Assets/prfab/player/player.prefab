@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jump: 11
+  jumpsound: {fileID: 8300000, guid: d45d3843994cf6a4fbd965c26bc43ade, type: 3}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -192,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCoolDown: 0.25
   firePoint: {fileID: 5369062768009511762}
+  FireballSound: {fileID: 8300000, guid: 68fbea99f86f01c4bb549050232111bd, type: 3}
   fireballs:
   - {fileID: 0}
   - {fileID: 0}
@@ -222,6 +224,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  iFramesDuration: 1
+  numberOfFlashes: 3
+  hurt: {fileID: 8300000, guid: 8afda6b5504a895488930f8b2d8d8f9d, type: 3}
+  death: {fileID: 8300000, guid: b248d647e89f8544085b12435f903d52, type: 3}
 --- !u!1 &5369062768009511763
 GameObject:
   m_ObjectHideFlags: 0

@@ -408,6 +408,8 @@ MonoBehaviour:
   - {fileID: 1836371394394919681}
   - {fileID: 3515699587901238483}
   - {fileID: 7841351323061057640}
+  deathsound: {fileID: 8300000, guid: b248d647e89f8544085b12435f903d52, type: 3}
+  hurtsound: {fileID: 8300000, guid: 8afda6b5504a895488930f8b2d8d8f9d, type: 3}
   iFramesDuration: 1
   numberOfFlashes: 2
 --- !u!114 &4130826454896020886
@@ -430,6 +432,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
+  meleesound: {fileID: 8300000, guid: 4051adfe27cf309439fc99c29a1831d4, type: 3}
 --- !u!1 &7841351323061057640
 GameObject:
   m_ObjectHideFlags: 0

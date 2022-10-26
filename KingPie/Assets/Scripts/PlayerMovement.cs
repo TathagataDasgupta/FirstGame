@@ -8,6 +8,11 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float speed; 
     [SerializeField] private float jump;
+
+    [Header("jumpSound")]
+    [SerializeField] private AudioClip jumpsound;
+
+
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
@@ -91,6 +96,10 @@ public class PlayerMovement : MonoBehaviour
                 {
                     // we have keep the x velocity same and the y velocity = the value of jump
                     Junp();
+                if (Input.GetKeyDown(KeyCode.Space)|| Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+                {
+                    SoundManager.instance.PlaySound(jumpsound);
+                }
 
                  }
             
