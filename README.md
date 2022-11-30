@@ -1,4 +1,4 @@
-# FirstGame
+# MOUNT NINJA
 This is my first game
 
-I am trying some thing new
+
